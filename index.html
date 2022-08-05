@@ -192,5 +192,18 @@
     </footer>
     <script src="./js/menu.js"></script>
     <script src="./js/menuc.js"></script>
+    <script>
+        let buttons = document.querySelectorAll('a');
+        buttons.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                let target = e.currentTarget.getAttribute('href');
+      
+                document.querySelector(target).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
