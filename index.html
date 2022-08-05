@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taqueria Memo-rable</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="./images/taco.png" type="image/x-icon">
+</head>
+<body>
+    <header class="head">
+        <nav class="nav container" id="inicio">
+            <div class="nav_logo">
+            <h2 class="nav__title">Taqueria Memo-rable</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#inicio" class="nav__links" title="Volver al inicio">Inicio <img src="./images/inicio.svg" alt="icon__menu" class="nav__img"></a>
+                </li>
+                <li class="nav__items">
+                    <a href="#menu" class="nav__links" title="Conoce nuestro menu">Menu <img src="./images/menuc.svg" alt="icon__menu" class="nav__img"></a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links" title="Conoce de nosotros">Acerca de <img src="./images/search.svg" alt="icon_search" class="nav__img"></a>
+                </li>
+                <li class="nav__items">
+                    <a href="#contacto" class="nav__links" title="Contactanos">Contacto <img src="./images/contacto.svg" alt="icon__menu" class="nav__img"></a>
+                </li>
+                <img src="./images/close.svg" class="nav__close" alt="icon_close">
+            </ul>
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img" alt="icon__menu">
+            </div>
+        </nav>
+        <section class="head__container container">
+            <h2 class="head__title">!Bienvenid@ a Taqueria Memo-rable¡</h2>
+            <p class="head__paragraph">Taqueria Memo-rable es una taqueria enfocada a darte una experiencia unica para jamas nos olvides.</p>
+            <a href="#" class="cta">Veamos</a>
+        </section>
+    </header>
+    <main>
+        <section class="menu container">
+            <h2 class="subtitle" id="menu">Menu</h2>
+            <section class="menu__container">
+                <article class="menu__padding">
+                    <div class="menu__class">
+                        <h3 class="menu__title">Tacos
+                            <span class="menu__arrow">
+                                <img src="./images/arrow.svg" class="menu__img" alt="icon_arrow">
+                            </span>
+                        </h3>
+                        <div class="menu__show">
+                            <div class="alimentos">
+                                <p class="alimento">Taco de fajita</p>
+                                <p class="alimento">Taco de carne al pastor</p>
+                            </div>
+                            <div class="precios">
+                                <p class="precio">80$/Orden</p>
+                                <p class="precio">70$/Orden</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="menu__container">
+                <article class="menu__padding">
+                    <div class="menu__class">
+                        <h3 class="menu__title">Hamburguesas
+                            <span class="menu__arrow">
+                                <img src="./images/arrow.svg" class="menu__img" alt="icon_arrow">
+                            </span>
+                        </h3>
+                        <div class="menu__show">
+                            <div class="alimentos">
+                                <p class="alimento">Taco de fajita</p>
+                                <p class="alimento">Taco de carne al pastor</p>
+                            </div>
+                            <div class="precios">
+                                <p class="precio">80$/Orden</p>
+                                <p class="precio">70$/Orden</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="menu__container">
+                <article class="menu__padding">
+                    <div class="menu__class">
+                        <h3 class="menu__title">Burritos
+                            <span class="menu__arrow">
+                                <img src="./images/arrow.svg" class="menu__img" alt="icon_arrow">
+                            </span>
+                        </h3>
+                        <div class="menu__show">
+                            <div class="alimentos">
+                                <p class="alimento">Taco de fajita</p>
+                                <p class="alimento">Taco de carne al pastor</p>
+                            </div>
+                            <div class="precios">
+                                <p class="precio">80$/Orden</p>
+                                <p class="precio">70$/Orden</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer class="footer" id="contacto">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curso CSS.</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#inicio" class="nav__links">Inicio <img src="./images/inicio.svg" alt="icon__menu" class="nav__img"></a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de <img src="./images/search.svg" alt="icon_search" class="nav__img"></a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#menu" class="nav__links">Menu  <img src="./images/menuc.svg" alt="icon__menu" class="nav__img"></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/xbjbrwgo" method="POST">
+                <h2 class="footer__newsletter">Envianos un mensaje</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="email">
+                    <textarea name="message" placeholder="Your message:" class="footer__input--text" cols="30" rows="5"></textarea>
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img" alt="icon_social"></a>
+                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img" alt="icon_social"></a>
+                <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img" alt="icon_social"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Taqueria Memo-rable</h3>
+        </section>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/menuc.js"></script>
+</body>
+</html>
