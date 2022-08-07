@@ -1,15 +1,14 @@
 (function(){
-    
     const sliders = [...document.querySelectorAll('.review__body')];
     const buttonNext = document.querySelector('#next');
     const buttonBefore = document.querySelector('#before');
-    let value;   
+    let value;
 
-    buttonNext.addEventListener('click', ()=>{
+    buttonNext.addEventListener('click', function atras(){
         changePosition(1);
     });
 
-    buttonBefore.addEventListener('click', ()=>{
+    buttonBefore.addEventListener('click', function atras(){
         changePosition(-1);
     });
 
@@ -27,5 +26,10 @@
         sliders[value-1].classList.add('review__body--show');
 
     }
-
+    (function loop() {
+        setTimeout(function() {
+            changePosition(1);
+            loop();
+        }, 10000);
+    })();
 })();
