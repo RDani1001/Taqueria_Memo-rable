@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap');
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 .container{
     width: 90%;
@@ -222,6 +222,59 @@ body{
     margin-bottom: 40px;
 }
 
+/* Review */
+
+.review{
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.842) 50%, #313131 50%, #313131);
+    background-size: 4px 4px;
+}
+.review__container{
+    background-color: rgb(36, 35, 35);
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    box-shadow: 0 0 5px 2px;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    text-align: left;
+}
+.review__body{
+    pointer-events: none;
+    opacity: 0;
+}
+.review__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+.subtitle__review{
+    font-size: 50px;
+    color: rgb(173, 173, 173);
+}
+.review__bodys{
+    margin-top: -200px;
+    display: flex;
+}
+.review__text{
+    position: absolute;
+    max-width: 70%;
+}
+.review__star{
+    height: 33px;
+    width: 33px;
+}
+.text__review{
+    color: rgb(114, 114, 114);
+}
+.review__arrow{
+    width: 90%;
+    cursor: pointer;
+}
+
 /* Footer */
 
 .footer{
@@ -371,26 +424,21 @@ body{
         width: auto;
     }
 
-    .testimony__container{
+    .review__container{
         grid-template-columns: 30px 1fr 30px;
     }
-
-    .testimony__body{
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content max-content;
-        gap: 3em;
-        justify-items:center ;
+    .review__star{
+        height: auto;
+        width: auto;
     }
-
-
-    .testimony__img{
-        width: 200px;
-        height: 200px;
-        
+    .text__review{
+        font-size: medium;
     }
-
-    .questions__copy{
-        width: 100%;
+    .review__bodys{
+        margin-top: -190px;
+    }
+    .min{
+        font-size: 13px;
     }
 
     .footer__container{
@@ -440,21 +488,25 @@ body{
         font-size: 1.8rem;
     }
 
-    .testimony{
-        --padding-container: 60px 0;
+    .subtitle__review{
+        font-size: 200%;
     }
-
-    .testimony__container{
+    .review__star{
+        height: 20px;
+        width: 20px;
+    }
+    .review__text{
+        max-width: 60%;
+    }
+    .text__review{
+        font-size: smaller;
+    }
+    .review__container{
         grid-template-columns: 28px 1fr 28px;
         gap: .9em;
     }
-
-    .testimony__arrow{
-        width: 100%;
-    }
-
-    .testimony__course{
-        margin-top: 15px;
+    .min{
+        font-size: 11.5px;
     }
 
     .menu__title{
@@ -510,5 +562,21 @@ body{
         margin:0;
         width: 100%;
         */
+    }
+}
+
+@media (max-width:410px){
+    .text__review{
+        font-size: 12px;
+    }
+    .subtitle__review{
+        font-size: 25px;
+    }
+    .review__star{
+        height: 15px;
+        width: 15px;
+    }
+    .min{
+        font-size: 10px;
     }
 }
